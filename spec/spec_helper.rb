@@ -40,3 +40,7 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = "random"
 end
+
+def id_of_created_url(current_path)
+  current_path.gsub('/','')
+end
