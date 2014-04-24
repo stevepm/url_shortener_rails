@@ -34,7 +34,6 @@ feature 'URL shortening' do
   end
 
   scenario 'Reports an error when user tries to shorten a blank url' do
-    pending
     visit '/'
 
     click_on 'Shorten'

@@ -1,6 +1,6 @@
 require 'uri'
 class Url < ActiveRecord::Base
-  validates :url, :presence => {:message => 'URL cannot be blank'}
+  validates :url, :presence => {:message => 'URL can not be blank'}
   validate :is_a_url
 
   private
