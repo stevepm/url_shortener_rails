@@ -2,7 +2,6 @@ require 'spec_helper'
 
 feature 'Total visits' do
   scenario 'Allows user to see total visits for a URL' do
-    pending
     visit '/'
 
     fill_in 'url_to_shorten', with: 'http://livingsocial.com'

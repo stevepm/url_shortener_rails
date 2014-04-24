@@ -17,9 +17,11 @@ class UrlController < ApplicationController
   end
 
   def view
-    @url = Url.find(params[:id])
     if params[:stats]
+      @url = Url.find(params[:id])
     else
+      @url = Url.find(params[:id])
+      @url.update_column(:visits, @url.visits+1)
       redirect_to @url.url
     end
   end
