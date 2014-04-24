@@ -3,6 +3,7 @@
     %li
       = error
 
-%form{action: '/new', method: 'post'}
-  %input{type: 'text', name: 'url_to_shorten'}
-  %input{type: 'submit', value: 'Shorten'}
+= form_tag '/new' do
+  = label_tag :url_to_shorten
+  = text_field_tag :url_to_shorten
+  = submit_tag('Shorten')
