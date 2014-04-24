@@ -1,3 +1,8 @@
+%ul
+  - @errors.each do |error|
+    %li
+      = error
+
 %form{action: '/new', method: 'post'}
   %input{type: 'text', name: 'url_to_shorten'}
   %input{type: 'submit', value: 'Shorten'}

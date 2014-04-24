@@ -18,7 +18,6 @@ feature 'URL shortening' do
   end
 
   scenario 'Reports an error when user tries to shorten a non-url' do
-    pending
     visit '/'
 
     fill_in 'url_to_shorten', with: 'not a url'

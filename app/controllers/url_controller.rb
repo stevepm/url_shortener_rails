@@ -1,19 +1,19 @@
 class UrlController < ApplicationController
-  def index
 
+  def initialize
+    @errors = []
+  end
+  def index
   end
 
   def new
     url = Url.new(url: params[:url_to_shorten])
-    url.save
-    redirect_to "/#{url.id}?stats=true"
-    # if url.valid?
-    #   url.save
-    #   redirect_to "/#{url.id}?stats=true"
-    # else
-    #   @errors = url.errors.full_messages
-    #   render 'welcome/index'
-    # end
+    if url.save
+      redirect_to "/#{url.id}?stats=true"
+    else
+      @errors = url.errors[:url]
+      render 'url/index'
+    end
   end
 
   def view
