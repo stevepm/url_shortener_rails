@@ -1,0 +1,7 @@
+%p
+  Original URL:
+  = @url.url
+
+%p
+  "Shortened" URL:
+  = request.base_url+ '/' + @url.id.to_s
