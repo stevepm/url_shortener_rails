@@ -3,6 +3,7 @@ class UrlController < ApplicationController
   def initialize
     @errors = []
   end
+
   def index
   end
 
