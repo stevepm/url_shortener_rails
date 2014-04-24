@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20140424061002) do
   enable_extension "plpgsql"
 
   create_table "urls", force: true do |t|
-    t.string  "url"
+    t.string "url"
     t.integer "visits", default: 0
   end
 

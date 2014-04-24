@@ -9,9 +9,9 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml-rails', '~> 0.5.3'
-gem 'spring',        group: :development
+gem 'spring', group: :development
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.14.2'

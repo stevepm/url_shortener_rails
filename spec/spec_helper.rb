@@ -42,5 +42,5 @@ RSpec.configure do |config|
 end
 
 def id_of_created_url(current_path)
-  current_path.gsub('/','')
+  current_path.gsub('/', '')
 end
